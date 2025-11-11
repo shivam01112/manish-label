@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 15.0.0, SVG Export Plug-In  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" [
+	<!ENTITY ns_flows "http://ns.adobe.com/Flows/1.0/">
+]>
+<svg version="1.1"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:a="http://ns.adobe.com/AdobeSVGViewerExtensions/3.0/"
+	 x="0px" y="0px" width="570px" height="240px" viewBox="-135 -103.782 570 240" enable-background="new -135 -103.782 570 240"
+	 xml:space="preserve">
+<defs>
+</defs>
+<polygon fill="#33383D" points="33.454,12.231 28.854,0.215 20.818,0.215 16.185,12.231 11.589,0.215 0,0.215 12.089,31.741 
+	19.158,31.741 24.839,17.253 30.517,31.741 37.55,31.741 49.677,0.215 38.089,0.215 "/>
+<rect x="104.338" y="0.411" fill="#33383D" width="11.857" height="31.33"/>
+<path fill="#33383D" d="M146.021,12.538c-1.931-0.81-5.717-1.738-5.021-3.476c0.501-1.271,2.236-1.271,7.917,1.276l3.167-7.497
+	c0,0-3.86-2.426-9.427-2.818c-2.279-0.153-8.343,0.349-10.97,4.831c-0.965,1.623-1.431,3.01-1.431,5.099
+	c0,4.364,3.322,6.799,5.257,7.958c3.901,2.354,7.609,2.318,7.184,4.4c-0.733,3.399-7.998-1.19-9.893-2.16l-3.437,8.307
+	c0,0,4.985,3.978,13.056,3.978c8.153,0,11.936-5.213,11.936-9.656C154.286,17.329,150.693,14.472,146.021,12.538z"/>
+<path fill="#33383D" d="M291.657,12.538c-1.934-0.81-5.721-1.738-5.023-3.476c0.504-1.271,2.242-1.271,7.92,1.276l3.168-7.497
+	c0,0-3.859-2.426-9.424-2.818c-2.281-0.153-8.346,0.349-10.971,4.831c-0.969,1.623-1.432,3.01-1.432,5.099
+	c0,4.364,3.32,6.799,5.254,7.958c3.898,2.354,7.607,2.318,7.184,4.4c-0.73,3.399-7.992-1.19-9.887-2.16l-3.439,8.307
+	c0,0,4.984,3.978,13.057,3.978c8.152,0,11.938-5.213,11.938-9.656C299.92,17.329,296.292,14.472,291.657,12.538z"/>
+<polygon fill="#33383D" points="251.829,19.881 261.561,19.881 261.561,12.155 251.829,12.155 251.829,8.717 263.381,8.717 
+	263.381,0.411 240.241,0.411 240.241,31.741 264.19,31.741 264.19,23.278 251.829,23.278 "/>
+<polygon fill="#33383D" points="216.327,0.411 204.467,0.411 204.467,31.741 229.194,31.741 229.194,22.159 216.327,22.159 "/>
+<path fill="#33383D" d="M163.25,9.684h9.004v22.057h11.818V9.684h9V0.411h-29.863v9.273H163.25z"/>
+<polygon fill="#33383D" points="78.57,10.998 70.384,10.998 70.384,0.411 59.334,0.411 59.334,31.741 70.384,31.741 70.384,20.612 
+	78.57,20.612 78.57,31.741 89.619,31.741 89.619,0.411 78.57,0.411 "/>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+</svg>
