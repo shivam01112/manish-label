@@ -115,11 +115,11 @@
             autoplay: 5000
         });
         $('.banner-carousel-btn .left-btn').on('click', function () {
-            $('.banner-style-one').trigger('next.owl.carousel');
+            $('.banner-style-one').trigger('prev.owl.carousel');
             return false;
         });
         $('.banner-carousel-btn .right-btn').on('click', function () {
-            $('.banner-style-one').trigger('prev.owl.carousel');
+            $('.banner-style-one').trigger('next.owl.carousel');
             return false;
         });
     }
@@ -138,11 +138,11 @@
             autoplay: 5000
         });
         $('.banner-carousel-btn .left-btn').on('click', function () {
-            $('.banner-style-two').trigger('next.owl.carousel');
+            $('.banner-style-two').trigger('prev.owl.carousel');
             return false;
         });
         $('.banner-carousel-btn .right-btn').on('click', function () {
-            $('.banner-style-two').trigger('prev.owl.carousel');
+            $('.banner-style-two').trigger('next.owl.carousel');
             return false;
         });
     }
@@ -241,6 +241,8 @@
             loop: true,
             autoplay: {
                 delay: 5000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
             },
         });
     }
@@ -255,9 +257,11 @@
             observer: true,
             observeParents: true,
             speed: 1400,
-            mousewheel: true,
+            mousewheel: false,
             autoplay: {
                 delay: 5000,
+                disableOnInteraction: false,
+                pauseOnMouseEnter: true,
             },
             thumbs: {
                 swiper: teamOneThumbCarousel
