@@ -683,7 +683,7 @@ hr.style-one {
 }
 
 .site-header.header-one .top-bar {
-    padding: 20px 0;
+    padding: 28px 0;
     border-bottom: 1px solid #E8E8E8;
     background: linear-gradient(to bottom, #FAFAFA, #FFFFFF);
 }
@@ -3950,6 +3950,7 @@ background-color: #F3F3F3;
   justify-content: center;
   font-size: 24px;
   color: white;
+      border: 1px solid #acacac;
   box-shadow: 0 4px 10px rgba(0,0,0,0.3);
   animation: growRipplePhone 3s infinite;
   transition: all .4s ease;
