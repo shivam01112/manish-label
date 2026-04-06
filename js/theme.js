@@ -295,10 +295,84 @@
         if ($('.preloader').length) {
             $('.preloader').fadeOut('slow');
         }
-
-
-
-
     });
+
+    // Basic deterrents: block right-click, common DevTools shortcuts, and copying text.
+    (function () {
+        function isEditableTarget(target) {
+            if (!target) {
+                return false;
+            }
+            var tagName = target.tagName ? target.tagName.toLowerCase() : '';
+            return tagName === 'input' || tagName === 'textarea' || tagName === 'select' || target.isContentEditable;
+        }
+
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        }, false);
+
+        document.addEventListener('copy', function (e) {
+            if (!isEditableTarget(e.target)) {
+                e.preventDefault();
+            }
+        }, false);
+
+        document.addEventListener('cut', function (e) {
+            if (!isEditableTarget(e.target)) {
+                e.preventDefault();
+            }
+        }, false);
+
+        document.addEventListener('selectstart', function (e) {
+            if (!isEditableTarget(e.target)) {
+                e.preventDefault();
+            }
+        }, false);
+
+        document.addEventListener('dragstart', function (e) {
+            if (!isEditableTarget(e.target)) {
+                e.preventDefault();
+            }
+        }, false);
+
+        document.addEventListener('keydown', function (e) {
+            var key = e.key || e.keyCode;
+
+            if (key === 'F12' || key === 123) {
+                e.preventDefault();
+                return false;
+            }
+
+            if (e.ctrlKey && e.shiftKey && (key === 'I' || key === 'i' || key === 'J' || key === 'j' || key === 'C' || key === 'c')) {
+                e.preventDefault();
+                return false;
+            }
+
+            if (e.ctrlKey && (key === 'U' || key === 'u' || key === 'S' || key === 's')) {
+                e.preventDefault();
+                return false;
+            }
+        }, false);
+
+        if (window.console) {
+            ['log', 'warn', 'info', 'error', 'debug'].forEach(function (m) {
+                try {
+                    console[m] = function () {};
+                } catch (err) {}
+            });
+        }
+
+        (function detectDevTools() {
+            var threshold = 160;
+            try {
+                var widthDiff = Math.abs(window.outerWidth - window.innerWidth);
+                var heightDiff = Math.abs(window.outerHeight - window.innerHeight);
+                if (widthDiff > threshold || heightDiff > threshold) {
+                    // Optional: location.reload();
+                }
+            } catch (e) {}
+            setTimeout(detectDevTools, 1000);
+        })();
+    })();
 
 })(jQuery);
