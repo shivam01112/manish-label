@@ -682,6 +682,42 @@
         margin-top: 20px;
     }
 
+    /* Mobile responsive for service-two */
+    .col-5-col {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 calc(50% - 10px);
+            flex: 1 0 calc(50% - 10px);
+        margin: 5px;
+    }
+
+    .service-two__single {
+        padding: 25px 12px;
+        min-height: auto;
+    }
+
+    .service-two__title {
+        width: 100%;
+        font-size: 15px;
+        margin-top: 12px;
+        line-height: 1.3;
+    }
+
+    .service-two .row-5-col {
+        margin-left: -5px;
+        margin-right: -5px;
+        margin-top: 40px;
+        gap: 0;
+    }
+
+    .service-two .col-5-col {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .content-margin-30 {
+        margin-bottom: 20px;
+    }
+
 }
 
 @media(max-width: 575px) {
@@ -748,6 +784,46 @@
         padding: 50px;
     }
 
+    /* Mobile responsive adjustments for service-two */
+    .col-5-col {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 calc(50% - 8px);
+            flex: 1 0 calc(50% - 8px);
+        margin: 4px;
+    }
+
+    .service-two__single {
+        padding: 20px 10px;
+        min-height: auto;
+    }
+
+    .service-two__title {
+        font-size: 14px;
+        margin-top: 10px;
+        line-height: 1.2;
+    }
+
+    .service-two__single img {
+        width: 52px;
+        height: 52px;
+    }
+
+    .service-two .row-5-col {
+        margin-left: -4px;
+        margin-right: -4px;
+        margin-top: 30px;
+    }
+
+    .service-two .col-5-col {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .content-margin-30 {
+        margin-bottom: 15px;
+    }
+}
+
     .blog-details__tags-share {
         -webkit-box-orient: vertical;
         -webkit-box-direction: normal;
@@ -783,8 +859,8 @@
 @media(max-width: 480px) {
     .col-5-col {
         -webkit-box-flex: 1;
-        -ms-flex: 1 0 50%;
-            flex: 1 0 50%;
+        -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
     }
 
     .download-one__option {
@@ -797,6 +873,46 @@
     .download-one__feature {
         margin-bottom: 25px;
     }
+
+    /* Service-two mobile fixes */
+    .col-5-col {
+        -webkit-box-flex: 1;
+        -ms-flex: 1 0 calc(50% - 6px);
+            flex: 1 0 calc(50% - 6px);
+        margin: 3px;
+    }
+
+    .service-two__single {
+        padding: 18px 8px;
+        min-height: auto;
+    }
+
+    .service-two__title {
+        font-size: 13px;
+        margin-top: 8px;
+        line-height: 1.2;
+    }
+
+    .service-two__single img {
+        width: 48px;
+        height: 48px;
+    }
+
+    .service-two .row-5-col {
+        margin-left: -3px;
+        margin-right: -3px;
+        margin-top: 25px;
+    }
+
+    .service-two .col-5-col {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .content-margin-30 {
+        margin-bottom: 12px;
+    }
+}
 
     .blog-details__author-image,
     .blog-details__author-content {
