@@ -167,7 +167,7 @@ hr.style-one {
 .block-title__tag-line {
     color: #ef425a;
     margin: 0;
-    font-size: 24px;
+    font-size: 17px;
     font-weight: 400;
     line-height: 1em;
 }
@@ -2016,11 +2016,11 @@ display: inline-block;
 
 .cta-one__image-block__content {
     background-color: #000;
-    padding: 35px 0;
+    padding: 18px 0;
 }
 
 .cta-one__image-block__content h3 {
-    font-size: 30px;
+    font-size: 18px;
     font-weight: 700;
     color: #fff;
     font-family: "Titillium Web", sans-serif;
@@ -2828,7 +2828,7 @@ position: absolute;
 }
 
 .team-one__content .block-title__title {
-    font-size: 40px;
+    font-size: 27px;
 }
 
 .team-one__text {
